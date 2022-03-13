@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+  /* CSS RESET */
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -40,22 +41,21 @@ const GlobalStyles = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-  /* GLOBAL STYLES */
+
+  /* MORE GLOBAL STYLES */
   *,
   *:before,
   *:after {
     box-sizing: border-box;
     line-height: 1.45;
+    /* font-family: 'Inter'; */
+    /* font-family: 'Wotfard'; */
     /* font-family: 'Roboto'; */
-    font-family: 'Wotfard';
     /* font-family: 'Zilla Slab'; */
     /* font-family: 'Work Sans'; */
-    /* font-family: 'SpaceMono NF'; */
-    /* font-family: 'SF Mono'; */
     /* font-family: 'SF Text'; */
     /* font-family: 'SF Display'; */
     /* font-family: 'Consolas'; */
-    /* font-family: 'JetBrainsMono NF'; */
     /* font-family: 'Nunito'; */
     /* font-family: 'Cera Pro'; */
     /* font-family: 'Dosis'; */
@@ -64,7 +64,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
   }
-  #root {
+  #root, #__next  {
     /*
       Create a stacking context, without a z-index.
       This ensures that all portal content (modals and tooltips) will
