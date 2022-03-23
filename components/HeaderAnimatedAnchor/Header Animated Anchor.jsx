@@ -64,7 +64,6 @@ const NavLink = ({ href, children }) => (
 
 const NavAnchor = styled.a`
   text-decoration: none;
-  color: inherit;
   font-weight: 500;
   font-size: 1.25rem;
   display: block;
